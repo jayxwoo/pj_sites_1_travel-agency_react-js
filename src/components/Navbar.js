@@ -24,12 +24,13 @@ const Navbar = () => {
     window.addEventListener('resize', () => {
         checkMobile();
     });
-    if (menuBtn) {
-        document.body.classList.add('scroll-disabled');
-    } else {
-        document.body.classList.remove('scroll-disabled');
-    }
-    
+    if (window.innerWidth <= 850) {
+        if (menuBtn) {
+            document.body.classList.add('scroll-disabled');
+        } else {
+            document.body.classList.remove('scroll-disabled');
+        };
+    };
 
     return (
         <header className="header">
