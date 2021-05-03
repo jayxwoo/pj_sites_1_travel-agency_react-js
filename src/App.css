@@ -319,9 +319,6 @@
     .travel-cards-group {
         flex-direction: column;
     }
-    .travel-card__item:hover {
-        transform: none;
-    }
 }
 
 /* Footer */
