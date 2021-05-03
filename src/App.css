@@ -258,7 +258,6 @@
     overflow: hidden;
     margin: 1rem;
     transition: all 0.3s ease-in-out;
-;
 }
 .travel-card__item:hover {
     transform: rotate(2deg);
@@ -318,6 +317,9 @@
     }
     .travel-cards-group {
         flex-direction: column;
+    }
+    .travel-card__item:hover {
+        transform: none;
     }
 }
 
