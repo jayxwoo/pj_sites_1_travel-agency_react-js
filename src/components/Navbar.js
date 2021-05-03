@@ -37,11 +37,11 @@ const Navbar = () => {
                 <LogoLink />
                 <nav className={menuBtn ? 'header__nav header__nav--active' : 'header__nav'}>
                     <ul className="header__nav-menu-group">
-                        <li className="header__nav-menu-item"><NavLink className="header__nav-menu-link" exact to="/">Home</NavLink></li>
-                        <li className="header__nav-menu-item"><NavLink className="header__nav-menu-link" to="/services">Services</NavLink></li>
-                        <li className="header__nav-menu-item"><NavLink className="header__nav-menu-link" to="/products">Products</NavLink></li>
+                        <li className="header__nav-menu-item"><NavLink className="header__nav-menu-link" exact to="/" onClick={toggleMenu}>Home</NavLink></li>
+                        <li className="header__nav-menu-item"><NavLink className="header__nav-menu-link" to="/services" onClick={toggleMenu}>Services</NavLink></li>
+                        <li className="header__nav-menu-item"><NavLink className="header__nav-menu-link" to="/products" onClick={toggleMenu}>Products</NavLink></li>
                     </ul>
-                    <Link to="/sign-up" className="sign-up-link"><Button btnStyle="btn-outline" btnSize={isMobile ? 'btn-large' : 'btn-medium'} className="btn-sign-up">Sign Up</Button></Link>
+                    <Link to="/sign-up" className="sign-up-link" onClick={toggleMenu}><Button btnStyle="btn-outline" btnSize={isMobile ? 'btn-large' : 'btn-medium'} className="btn-sign-up">Sign Up</Button></Link>
                 </nav>
                 {isMobile && <button className="menu-btn" onClick={toggleMenu}><span className="material-icons menu-icon">{menuBtn ? 'close' : 'menu'}</span></button>}
             </div>
