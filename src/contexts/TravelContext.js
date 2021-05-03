@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext } from "react";
 import img01 from '../assets/images/img-01.jpeg';
 import img02 from '../assets/images/img-02.jpeg';
 import img03 from '../assets/images/img-03.jpeg';
@@ -8,7 +8,7 @@ import img05 from '../assets/images/img-05.jpeg';
 export const TravelContext = createContext();
 
 const TravelContextProvider = (props) => {
-    const [travels, setTravels] = useState([
+    const travels = [
         {
             src: img01,
             text: "Travel product 01",
@@ -44,7 +44,7 @@ const TravelContextProvider = (props) => {
             path: "/products",
             id: "5"
         }
-    ]);
+    ];
 
     return (
         <TravelContext.Provider value={{travels}}>
