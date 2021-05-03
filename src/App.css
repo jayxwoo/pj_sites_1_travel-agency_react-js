@@ -256,6 +256,7 @@
     flex-grow: 1;
     border-radius: 2rem;
     overflow: hidden;
+    z-index: 88;
     margin: 1rem;
     transition: all 0.3s ease-in-out;
 }
