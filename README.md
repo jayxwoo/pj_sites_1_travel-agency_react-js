@@ -5,12 +5,12 @@
 
 ## Features
 - Navbar
-- Hero
+- Hero (video bg)
 - Gallery / Travel options
 - Footer
 - Pages (Mockup)
 - Context API - travel products
-- Active menu indication
+- Active menu indicator (e.g. red dot)
 - Mobile / Responsive
 
 ## Skills
