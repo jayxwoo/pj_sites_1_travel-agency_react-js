@@ -1,4 +1,4 @@
-# 1. Travel Agency (React.js)
+# 2. Travel Agency (React.js)
 ## Screenshots
 ![screenshot-01](./screenshots/screenshot-01.png)
 ![screen-recording-01](./screenshots/screen-recording-01.gif)
